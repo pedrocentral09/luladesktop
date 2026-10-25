@@ -50,7 +50,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const b = c.querySelector('.sound-play-btn');
         b.textContent = '▶️ Ouvir';
         b.style.background = 'rgba(255, 214, 0, 0.1)';
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
 
       const audio = new Audio(`sounds/${soundFile}`);
       currentAudio = audio;
@@ -62,15 +79,66 @@ document.addEventListener('DOMContentLoaded', () => {
       audio.play().catch(e => {
         console.warn('Audio play prevented by browser policy:', e);
         btn.textContent = '▶️ Ouvir';
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
 
       audio.onended = () => {
         btn.textContent = '▶️ Ouvir';
         btn.style.background = 'rgba(255, 214, 0, 0.1)';
         btn.style.color = 'var(--color-yellow)';
       };
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
-  });
+  }
+
+});
+  
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
 
   // 3. Interactive Web Simulator Sandbox
   const arena = document.getElementById('arena');
@@ -98,11 +166,45 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         simImg.style.transform = 'scaleX(-1)';
       }
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
+  }
+
+});
 
     arena.addEventListener('mouseleave', () => {
       isTracking = false;
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
+  }
+
+});
 
     // Smooth physics loop
     function updateSimulator() {
@@ -141,31 +243,150 @@ document.addEventListener('DOMContentLoaded', () => {
         e.stopPropagation();
         const rand = quotes[Math.floor(Math.random() * quotes.length)].replace(/^"|"$/g, '');
         setBubble(rand);
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
     }
 
     if (btnSoundGrab) {
       btnSoundGrab.addEventListener('click', (e) => {
         e.stopPropagation();
-        new Audio('sounds/grab.wav').play().catch(() => {});
-        setBubble("🥷 Guardei seu mouse no paletó!");
+        new Audio('sounds/grab.wav').play().catch(() => {
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
+        setBubble("🥷 Guardei seu mouse no paletó!");
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
     }
 
     if (btnSoundXandao) {
       btnSoundXandao.addEventListener('click', (e) => {
         e.stopPropagation();
-        new Audio('sounds/xandao_gavel.wav').play().catch(() => {});
-        setBubble("⚖️ Prisão preventiva decretada pelo Xandão!");
+        new Audio('sounds/xandao_gavel.wav').play().catch(() => {
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
+        setBubble("⚖️ Prisão preventiva decretada pelo Xandão!");
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
     }
 
     if (btnSoundMst) {
       btnSoundMst.addEventListener('click', (e) => {
         e.stopPropagation();
-        new Audio('sounds/mst_invasion.wav').play().catch(() => {});
-        setBubble("🚩 Ocupação do MST: Esse monitor é improdutivo!");
+        new Audio('sounds/mst_invasion.wav').play().catch(() => {
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
+    });
+  }
+
+});
+        setBubble("🚩 Ocupação do MST: Esse monitor é improdutivo!");
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
     }
   }
 
@@ -228,8 +449,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Previne navegação padrão duplicada
       e.preventDefault();
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
-  });
+  }
+
+});
+  
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
 
   // Fechar modal
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeDonationModal);
@@ -241,7 +496,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === donationModal) {
         closeDonationModal();
       }
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
+  }
+
+});
   }
 
   // Tecla ESC fecha o modal
@@ -249,7 +521,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && donationModal && donationModal.classList.contains('active')) {
       closeDonationModal();
     }
-  });
+  
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
 
   // Copiar chave PIX
   if (btnCopyPix && pixKeyInput) {
@@ -268,8 +557,42 @@ document.addEventListener('DOMContentLoaded', () => {
         document.execCommand('copy');
         copyPixText.textContent = "✅ Copiado!";
         setTimeout(() => { copyPixText.textContent = "📋 Copiar Chave"; }, 2500);
+      
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
       });
     });
+  }
+
+});
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
   }
 
   // Seleção de valores nas pílulas de doação
@@ -277,7 +600,58 @@ document.addEventListener('DOMContentLoaded', () => {
     pill.addEventListener('click', () => {
       donationPills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
+    
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
     });
-  });
+  }
+
+});
+  
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
+
+});
+
+
+  // Copiar chave PIX da seção da página
+  const btnCopyPagePix = document.getElementById('btn-copy-page-pix');
+  const pagePixKey = document.getElementById('page-pix-key');
+  if (btnCopyPagePix && pagePixKey) {
+    btnCopyPagePix.addEventListener('click', () => {
+      navigator.clipboard.writeText(pagePixKey.value).then(() => {
+        btnCopyPagePix.textContent = '✅ Copiado!';
+        btnCopyPagePix.style.background = '#00c853';
+        setTimeout(() => {
+          btnCopyPagePix.textContent = '📋 Copiar Chave';
+          btnCopyPagePix.style.background = '';
+        }, 2500);
+      });
+    });
+  }
 
 });
