@@ -1309,3 +1309,170 @@ body {
 .legal-notice-box strong {
   color: var(--color-yellow);
 }
+
+/* ==========================================================================
+   Dedicated Donation Section Styles
+   ========================================================================== */
+
+.donation-section {
+  padding: 5rem 0;
+}
+
+.donation-box-main {
+  background: linear-gradient(135deg, rgba(22, 27, 34, 0.95) 0%, rgba(13, 17, 23, 0.95) 100%);
+  border: 1px solid rgba(255, 214, 0, 0.3);
+  border-radius: 28px;
+  padding: 3.5rem 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 214, 0, 0.1);
+}
+
+.donation-page-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.donation-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.tier-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  padding: 1.75rem 1rem;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.tier-card:hover {
+  border-color: var(--color-green);
+  transform: translateY(-3px);
+}
+
+.tier-card.featured {
+  border-color: var(--color-yellow);
+  background: rgba(255, 214, 0, 0.06);
+}
+
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-yellow);
+  color: #000;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.tier-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tier-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.tier-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.donation-pix-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-card);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.pix-qr-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-pix-qr {
+  width: 140px;
+  height: 140px;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.qr-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.pix-copy-wrap {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.pix-field-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pix-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.page-pix-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: var(--text-main);
+  font-family: monospace;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.pix-disclaimer-mini {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.nav-btn-donate {
+  background: rgba(255, 214, 0, 0.12);
+  border-color: rgba(255, 214, 0, 0.35);
+  color: var(--color-yellow);
+}
+
+.nav-btn-donate:hover {
+  background: var(--color-yellow);
+  color: #000;
+}
