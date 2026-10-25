@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
       openDonationModal();
 
       // Inicia o download automaticamente após 400ms para não bloquear o usuário
-      const downloadUrl = link.getAttribute('href') || 'downloads/DesktopLula.exe';
+      const downloadUrl = link.getAttribute('href') || 'https://github.com/pedrocentral09/luladesktop/releases/latest/download/DesktopLula.exe';
       setTimeout(() => {
         const tempLink = document.createElement('a');
         tempLink.href = downloadUrl;

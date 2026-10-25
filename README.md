@@ -46,8 +46,8 @@ O **Desktop Lula** é um aplicativo de entretenimento satírico e paródia da cu
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/SEU-USUARIO/desktop-lula.git
-cd desktop-lula
+git clone https://github.com/pedrocentral09/luladesktop.git
+cd luladesktop
 ```
 
 ### 2. Instalar dependências
