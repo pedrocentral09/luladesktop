@@ -52,13 +52,13 @@ No arquivo `landing_page/app.js` (logo nas primeiras linhas), você encontrará 
 ```javascript
 const PIX_CONFIG = {
   // Insira aqui sua chave PIX real (e-mail, celular, CPF/CNPJ ou chave aleatória):
-  chavePix: "suachavepix@exemplo.com.br",
+  chavePix: "a0e9dba9-a948-4ddb-abc4-04b74224f15b",
   // Link opcional para Livepix, Apoia.se ou Mercado Pago:
   linkApoio: "https://livepix.gg/"
 };
 ```
 
-Basta substituir `"suachavepix@exemplo.com.br"` pela sua chave PIX real.
+Basta substituir `"a0e9dba9-a948-4ddb-abc4-04b74224f15b"` pela sua chave PIX real.
 - O campo de cópia e o **QR Code oficial** se atualizarão sozinhos instantaneamente na tela!
 - O usuário que clicar no botão de download verá o modal com o Pix da Picanha, enquanto o download do `.exe` inicia automaticamente em segundo plano.
 

@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const PIX_CONFIG = {
     // Insira aqui sua chave PIX real (e-mail, celular, CPF/CNPJ ou chave aleatória):
-    chavePix: "suachavepix@exemplo.com.br",
+    chavePix: "a0e9dba9-a948-4ddb-abc4-04b74224f15b",
     // Link opcional para Livepix, Apoia.se ou Mercado Pago:
     linkApoio: "https://livepix.gg/"
   };
